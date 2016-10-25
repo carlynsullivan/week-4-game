@@ -1,24 +1,35 @@
-body {
+#background-image {
+	position: absolute;
 	background-image: url("../images/star-wars-scene.jpg");
+	top: 0;
+	left: 0;
+	width: 1916px;
+	height: 808px;
+	opacity: 0.6;
+	z-index: 0;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	font-family: 'Raleway', sans-serif;
 }
 
 header {
-	float: none;
-	display: block;
+	float: right;
 }
 
 h1 {
 	color: gold;
 	border: 1px white;
-	text-shadow: 2px 2px #888;
+	text-shadow: 2px 2px #000;
 	float: right;
 	right: 5%;
-	font-family: "Arial", sans-serif;
 }
 
 img {
 	position: relative;
-	width: 250px;
+	width: 200px;
 	height: auto;
 	float: left;
 }
@@ -27,8 +38,14 @@ img {
 .enemiesAvail,
 .defender {
 	height: auto;
-	border-width: 2px;
+	/*border-width: 2px;
 	border-style: solid;
-	border-color: black;
+	border-color: black;*/
 	clear: both;
+}
+
+h2 {
+	color: gold;
+	border: 1px white;
+	text-shadow: 2px 2px #000;
 }

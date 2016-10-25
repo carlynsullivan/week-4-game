@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--Meyer's Reset-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:700|Raleway:500|Share+Tech+Mono" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Page-specific CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script   src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
+	<!--jQuery CDN-->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
+	<!--Page-specific Javascript-->
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<title>Star Wars Game</title>
 </head>
 <body>
+	<div id="background-image"></div>
 	<div class="container">
 		<header>
 			<h1>Star Wars Game</h1>
 		</header>
 		<div class="main-container">
-			<div class="row yourCharacter">
+			<div class="row yourCharacter col-lg-9">
 				<h2>Your Character</h2>
-				<div class="img r2d2"><img src="assets/images/r2d2.jpg" class="r2d2"></div>
-				<div class="img c3po"><img src="assets/images/c3po.jpg" class="c3po"></div>
-				<div class="img chewy"><img src="assets/images/chewy.jpg" class="chewy"></div>
-				<div class="img yoda"><img src="assets/images/yoda.jpg" class="yoda"></div>
+				<div class="character r2d2"><img src="assets/images/r2d2.jpg" class="r2d2"></div>
+				<div class="character c3po"><img src="assets/images/c3po.jpg" class="c3po"></div>
+				<div class="character chewy"><img src="assets/images/chewy.jpg" class="chewy"></div>
+				<div class="character yoda"><img src="assets/images/yoda.jpg" class="yoda"></div>
 			</div>
 			<div class="row enemiesAvail">
 				<h2>Enemies Available</h2>
@@ -26,6 +36,21 @@
 				<h2>Defender</h2>
 				
 			</div>
+			<div class="row buttons">
+				<button class="attack">
+					Attack!
+				</button>
+				<button class="restart">
+					Restart
+				</button>
+			</div>
+			<!-- <div class="row instructions">
+				<h4>
+					Instructions:<br>
+					1. First, choose your player by clicking them.<br>
+					2. Second, click the enemy you would like to fight.<br>
+				</h4>
+			</div> -->
 		</div>
 	</div>
 </body>
