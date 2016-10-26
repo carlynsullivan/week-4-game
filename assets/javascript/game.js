@@ -39,20 +39,20 @@ $(document).ready(function() {
 	});
 	$(".enemy").on("click", function() {
 		//clicking r2d2 moves r2d2 down a div
-		if ($(this).hasClass("r2d2")) {
+		if ($(".enemy").hasClass("r2d2")) {
 			$(this).appendTo(".defender")
 			console.log($(".defender").html());
 		//clicking c3po moves c3po down a div
-		} else if ($(this).hasClass("c3po")) {
-			$(this).appendTo(".defender");
+		} else if ($(".enemy").hasClass("c3po")) {
+			$(".enemy").appendTo(".defender");
 			console.log($(".defender").html());
 		//clicking chewy moves chewy down a div
 		} else if ($(this).hasClass("chewy")) {
-			$(this).appendTo(".defender");
+			$(".enemy").appendTo(".defender");
 			console.log($(".defender").html());
 		//clicking yoda moves yoda down a div
 		} else if ($(this).hasClass("yoda")) {
-			$(this).appendTo(".defender");
+			$(".enemy").appendTo(".defender");
 			console.log($(".defender").html());
 		}
 	});
